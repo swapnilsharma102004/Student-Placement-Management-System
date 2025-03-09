@@ -32,32 +32,32 @@ This system automates tasks such as student registration, placement tracking, an
 Below is a brief description of each file and its purpose:
 
 ### Log_in
-- **login_form.php:** Main login page code.
-- **login.css:** Styles for the login page.
-- **login.js:** Functionality for the login page.
+- **`login_form.php`:** Main login page code.
+- **`login.css`:** Styles for the login page.
+- **`login.js`:** Functionality for the login page.
 
 ### Integration
-- **config.php:** Connects to the local database.
-- **database.php:** Holds user registration data.
+- **`config.php`:** Connects to the local database.
+- **`database.php`:** Holds user registration data.
 
 ### Student
-- **home.html:** Student dashboard home page.
-- **listing.php:** Displays jobs listed by coordinators.
-- **jobapp.html:** Allows students to apply for jobs.
-- **submit_application.php:** Submits job applications.
-- **submit_cv.php:** Uploads CVs with applications.
-- **internship-listing.html:** Lists internships (under development).
-- **profile.html:** Displays student profiles (not integrated).
-- **tracking.html:** Tracks submitted applications (not implemented).
-- **discussion.html:** Discussion area for students.
-- **about.html:** Website information.
-- **faq.html:** Frequently Asked Questions.
+- **`home.html`:** Student dashboard home page.
+- **`listing.php`:** Displays jobs listed by coordinators.
+- **`jobapp.html`:** Allows students to apply for jobs.
+- **`submit_application.php`:** Submits job applications.
+- **`submit_cv.php`:** Uploads CVs with applications.
+- **`internship-listing.html`:** Lists internships (under development).
+- **`profile.html`:** Displays student profiles (not integrated).
+- **`tracking.html`:** Tracks submitted applications (not implemented).
+- **`discussion.html`:** Discussion area for students.
+- **`about.html`:** Website information.
+- **`faq.html`:** Frequently Asked Questions.
 
 ### Coordinator
-- **coordinator.php:** Coordinator dashboard.
-- **job-opening.php:** Adds job openings.
-- **schedual-interview.php:** Schedules interviews.
-- **view_application.php:** Displays uploaded CVs.
+- **`coordinator.php`:** Coordinator dashboard.
+- **`job-opening.php`:** Adds job openings.
+- **`schedual-interview.php`:** Schedules interviews.
+- **`view_application.php`:** Displays uploaded CVs.
 ## Installation
 
 1. Install XAMPP from [Apache Friends](https://www.apachefriends.org/).
