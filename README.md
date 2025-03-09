@@ -1,109 +1,76 @@
 
-## Table of Contents
+---
 
-- [Title and Description](#student-placement-management-system)
+## Table of Contents
+- [Student Placement Management System](#student-placement-management-system)
 - [Project Overview](#project-overview)
 - [Technologies Used](#technologies-used)
 - [File Structure](#file-structure)
-    - [Log_in](#log_in)
-    - [Integration](#integration)
-    - [Student](#student)
-    - [Coordinator](#coordinator)
+  - [Log_in](#log_in)
+  - [Integration](#integration)
+  - [Student](#student)
+  - [Coordinator](#coordinator)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contributing](#contributing)
 
-
-
-
-
-
-
-    
-
-
-
-
+---
 # Student Placement Management System
 
-Welcome to the Student Placement Management System, designed to streamline the process of managing student placements efficiently. This system aims to provide a comprehensive platform for tracking and organizing student placements.
-
-
+The Student Placement Management System is designed to streamline student placement processes efficiently. It provides a comprehensive platform for tracking and organizing student placements.
 ## Project Overview
 
-The Student Placement Management System is a software solution that helps educational institutions manage student placements by automating tasks such as student registration, placement tracking, and reporting. It is built with [list technologies used, e.g., HTML, php, MySQL].
+This system automates tasks such as student registration, placement tracking, and reporting, helping educational institutions manage placements effectively. It is built using PHP for the backend, HTML, CSS, and JavaScript for the frontend, and MySQL for the database.
+
 ## Technologies Used
 
-Backend: php
-
-Frontend: HTML, CSS, JavaScript
-
-Database: Myphpadmin
-
-Other Tools: Xampp
-## File Structure
+- *Backend:* PHP
+- *Frontend:* HTML, CSS, JavaScript
+- *Database:* MySQL
+- *Other Tools:* XAMPP## File Structure
 
 Below is a brief description of each file and its purpose:
 
-(All the CSS and JS file for style and functionality are of same name )
-
 ### Log_in
-- **`login_form.php`:** It is the main code for the login page
-- **`login.css`:** It gives color and design to login page
-- **`login.js`:** It gives functionality to the login page
+- **login_form.php:** Main login page code.
+- **login.css:** Styles for the login page.
+- **login.js:** Functionality for the login page.
 
 ### Integration
-- **`config.php`:** This connect to our local database
-- **`database.php`:** It holds the user registration data 
+- **config.php:** Connects to the local database.
+- **database.php:** Holds user registration data.
 
-### Student 
-
-- **`home.html`:** This is the home page of student dashboard 
-- **`listing.php`:** This page shows the jobs listed by the coordinator
-- **`jobapp.html`:** In this page Student apply for the job listed by the coordinator
-- **`submit_application.php`:** It Submits the application to the coordinator
-- **`submit_cv.php`:** It holds the CV and submits the application which is shown at the coordinator page
-- **`internship-listing.html`:** List of internship(under progress{you can try contributing} because it is same as job listing)
-- **`profile.html`:** Shows you the profile of Student(not integrated)
-- **`tracking.html`:** To track the application submitted by the student(not implemented for tracking , you can use ABC123,XYZ456 for testing)
-- **`discussion.html`:** This is the area for discussion amoung Students
-- **`about.html`:** This holds the information about the website
-- **`faq.html`:** This is the section where frequently asked question can be accessed
+### Student
+- **home.html:** Student dashboard home page.
+- **listing.php:** Displays jobs listed by coordinators.
+- **jobapp.html:** Allows students to apply for jobs.
+- **submit_application.php:** Submits job applications.
+- **submit_cv.php:** Uploads CVs with applications.
+- **internship-listing.html:** Lists internships (under development).
+- **profile.html:** Displays student profiles (not integrated).
+- **tracking.html:** Tracks submitted applications (not implemented).
+- **discussion.html:** Discussion area for students.
+- **about.html:** Website information.
+- **faq.html:** Frequently Asked Questions.
 
 ### Coordinator
-
-- **`coordinator.php`:** Dashboard for the coordinator login 
-- **`job-opening.php`:** Here coordinator will add the job opening which will be shown at the listing.php in student section
-- **`schedual-interview.php`:** In this page coordinator can schedule interviews for the selected Students
-- **`view_application.php`:** It shows all the uploaded CVs by the students to the coordinator
-
-
-
-
-
+- **coordinator.php:** Coordinator dashboard.
+- **job-opening.php:** Adds job openings.
+- **schedual-interview.php:** Schedules interviews.
+- **view_application.php:** Displays uploaded CVs.
 ## Installation
 
-We have to install Xampp for local server
-
-1. Install Xampp software 
-"https://www.apachefriends.org/"
-
-2. Start the apache and mysql action button 
-
-3. Now type "localhost" on any browers(Recommended:brave)
-4. Now go to phpmyadmin click "New" and create a database, Here is the tutorial :-
-"https://youtu.be/co-xyHRdHRg?si=153f68Ak-3igAwcS"
-
-
-
-
-
-    
+1. Install XAMPP from [Apache Friends](https://www.apachefriends.org/).
+2. Start Apache and MySQL services.
+3. Access localhost in your browser.
+4. Create a database using phpMyAdmin. [Tutorial](https://youtu.be/co-xyHRdHRg?si=153f68Ak-3igAwcS).
 ## Usage
 
-1. Access the system by navigating to "localhost" in your browser.
-2. Register as an administrator or student to use the system.
-3. Follow the on-screen instructions to manage placements.
+1. Access the system at localhost.
+2. Register as a student or coordinator.
+3. Follow on-screen instructions to manage placements.
 ## Contributing
 
-Contributions are welcome! Please submit a pull request with your changes and include a brief description of what you've added.
+Contributions are welcome! Please submit a pull request with your changes and include a brief description.
+
+---
