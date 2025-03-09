@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Profile</title>
+  <link rel="stylesheet" href="profile.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="profile-header">
+      <div class="profile-photo">
+        <img id="profile-img" src="default-profile.jpg" alt="Profile Picture">
+        <button id="edit-photo-btn">Edit</button>
+        <input type="file" id="upload-photo" accept="image/*" style="display: none;">
+      </div>
+      <div class="profile-details">
+        <h2 id="student-name">Swapnil Sharma</h2>
+        <p><strong>USN:</strong> 1AY22CS198</p>
+        <p><strong>AUID:</strong> AIT22BECS152</p>
+        <p><strong>Department:</strong> Computer Science</p>
+        <p><strong>Semester:</strong> 5</p>
+        <p><strong>Section:</strong> D</p>
+      </div>
+    </div>
+    <div class="profile-info">
+      <div class="info-section">
+        <h3>Personal Details</h3>
+        <p><strong>Contact Number:</strong> +91-9876543210</p>
+        <p><strong>Father's Name:</strong> Mr. Ganesh Sharma</p>
+        <p><strong>Address:</strong> ACHARYA INSTITUTES BANGALORE</p>
+      </div>
+      <div class="info-section">
+        <h3>Academic Performance</h3>
+        <canvas id="performance-chart" width="400" height="200"></canvas>
+      </div>
+    </div>
+  </div>
+  <script src="profile.js"></script>
+</body>
+</html>

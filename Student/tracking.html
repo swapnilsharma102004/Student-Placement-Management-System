@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Your Application</title>
+    <link rel="stylesheet" href="tracking.css">
+    <script defer src="tracking.js"></script>
+</head>
+<body>
+    <div class="tracking-app">
+        <!-- Step 1: Input Tracking ID -->
+        <div id="tracking-step-1" class="tracking-step">
+            <h1>Track Your Application</h1>
+            <p class="subtitle">Enter your Tracking ID to check the status of your application</p>
+            <div class="input-group">
+                <input type="text" id="tracking-id" placeholder="Enter Tracking ID">
+                <button id="check-tracking" class="btn-primary">Track</button>
+            </div>
+            <p id="tracking-error" class="error-message"></p>
+        </div>
+
+        <!-- Step 2: Application Status -->
+        <div id="tracking-step-2" class="tracking-step" style="display: none;">
+            <h1>Application Status</h1>
+            <div class="status-timeline">
+                <div class="status-step" id="step-1">
+                    <div class="circle active">1</div>
+                    <p>Application Submitted</p>
+                </div>
+                <div class="status-step" id="step-2">
+                    <div class="circle">2</div>
+                    <p>In Review</p>
+                </div>
+                <div class="status-step" id="step-3">
+                    <div class="circle" id="final-status">3</div>
+                    <p id="final-message">Check Email</p>
+                </div>
+            </div>
+            <button id="back-home" class="btn-secondary">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

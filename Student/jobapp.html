@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <link rel="stylesheet" href="jobapp.css">
+</head>
+<body>
+    <div class="application-form-container">
+        <h1>Job Application</h1>
+        <form id="jobApplicationForm" method="POST" action="submit_application.php" enctype="multipart/form-data">
+            
+            <label for="usn">Enter Your USN:</label>
+            <input type="text" id="usn" name="usn" placeholder="e.g., 123456" required>
+            
+            <label for="domain">Enter Your Domain:</label>
+            <input type="text" id="domain" name="domain" placeholder="e.g., Software Development" required>
+            
+            <label for="cv">Upload Your CV (PDF only):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf" required>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="jobapp.js"></script>
+</body>
+</html>
