@@ -1,4 +1,29 @@
 
+## Table of Contents
+
+- [Title and Description](#student-placement-management-system)
+- [Project Overview](#project-overview)
+- [Technologies Used](#technologies-used)
+- [File Structure](#file-structure)
+    - [Log_in](#log_in)
+    - [Integration](#integration)
+    - [Student](#student)
+    - [Coordinator](#coordinator)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+
+
+
+
+
+
+
+    
+
+
+
+
 # Student Placement Management System
 
 Welcome to the Student Placement Management System, designed to streamline the process of managing student placements efficiently. This system aims to provide a comprehensive platform for tracking and organizing student placements.
@@ -55,3 +80,30 @@ Below is a brief description of each file and its purpose:
 
 
 
+
+## Installation
+
+We have to install Xampp for local server
+
+1. Install Xampp software 
+"https://www.apachefriends.org/"
+
+2. Start the apache and mysql action button 
+
+3. Now type "localhost" on any browers(Recommended:brave)
+4. Now go to phpmyadmin click "New" and create a database, Here is the tutorial :-
+"https://youtu.be/co-xyHRdHRg?si=153f68Ak-3igAwcS"
+
+
+
+
+
+    
+## Usage
+
+1. Access the system by navigating to "localhost" in your browser.
+2. Register as an administrator or student to use the system.
+3. Follow the on-screen instructions to manage placements.
+## Contributing
+
+Contributions are welcome! Please submit a pull request with your changes and include a brief description of what you've added.
