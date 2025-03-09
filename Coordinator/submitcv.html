@@ -1,0 +1,68 @@
+<?php
+session_start();
+
+// Function to establish a database connection
+function getDatabaseConnection() {
+    $conn = new mysqli("localhost", "root", "", "user_db");
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    }
+    return $conn;
+}
+
+// Function to handle file upload
+function handleFileUpload($file) {
+    $cvName = $file['name'];
+    $cvTmpName = $file['tmp_name'];
+    $cvError = $file['error'];
+
+    // Check if the file is uploaded without errors
+    if ($cvError === 0) {
+        $cvDestination = 'uploads/' . basename($cvName); // Ensure the 'uploads' directory exists
+        if (move_uploaded_file($cvTmpName, $cvDestination)) {
+            return $cvDestination; // Return the destination path if successful
+        } else {
+            return false; // Return false if the file could not be moved
+        }
+    }
+    return false; // Return false if there was an error
+}
+
+// Function to submit the application
+function submitApplication($usn, $domain, $cvPath) {
+    $conn = getDatabaseConnection();
+    $usn = $conn->real_escape_string($usn);
+    $domain = $conn->real_escape_string($domain);
+    
+    $query = "INSERT INTO applications (usn, domain, cv) VALUES ('$usn', '$domain', '$cvPath')";
+    
+    if ($conn->query($query) === TRUE) {
+        return true; // Return true if the submission was successful
+    } else {
+        return false; // Return false if there was an error
+    }
+}
+
+// Check if the form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $usn = $_POST['usn'];
+    $domain = $_POST['domain'];
+    
+    // Handle file upload
+    $cvPath = handleFileUpload($_FILES['cv']);
+    
+    if ($cvPath) {
+        // Submit the application
+        if (submitApplication($usn, $domain, $cvPath)) {
+            echo "Application submitted successfully!";
+        } else {
+            echo "Error submitting application. Please try again.";
+        }
+    } else {
+        echo "Error uploading the CV. Please try again.";
+    }
+}
+
+// Close the database connection
+$conn->close();
+?>
