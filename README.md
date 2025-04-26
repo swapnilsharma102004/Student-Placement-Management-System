@@ -64,6 +64,7 @@ Below is a brief description of each file and its purpose:
 2. Start Apache and MySQL services.
 3. Access localhost in your browser.
 4. Create a database using phpMyAdmin. [Tutorial](https://youtu.be/co-xyHRdHRg?si=153f68Ak-3igAwcS).
+5. Or just import the given **`user_db.sql`**[Tutorial](https://youtube.com/shorts/YSjsW2nR78o?si=k_AjYQ9qJBz7sqev)
 ## Usage
 
 1. Access the system at localhost.
